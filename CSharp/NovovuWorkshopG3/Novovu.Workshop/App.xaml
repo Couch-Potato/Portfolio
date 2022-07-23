@@ -1,0 +1,110 @@
+﻿<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Novovu.Workshop"
+             xmlns:cc="clr-namespace:AvaloniaEdit.CodeCompletion;assembly=AvaloniaEdit"
+             x:Class="Novovu.Workshop.App"
+             xmlns:idc="clr-namespace:Dock.Avalonia.Controls;assembly=Dock.Avalonia"
+             >
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+
+  <Application.Styles>
+    <StyleInclude Source="avares://Avalonia.Themes.Default/DefaultTheme.xaml"/>
+    <StyleInclude Source="avares://AvaloniaEdit/AvaloniaEdit.xaml" />
+    <StyleInclude Source="avares://Dock.Avalonia.Themes.Default/DefaultTheme.xaml"/>
+    <Style Selector="idc|ProportionalStackPanelSplitter">
+      <Setter Property="Template">
+        <ControlTemplate>
+          <Border Background="#212337"
+                  BorderBrush="#212337"
+                  BorderThickness="0"/>
+        </ControlTemplate>
+      </Setter>
+    </Style>
+    <Style Selector="cc|CompletionList">
+      <Setter Property="Template">
+        <ControlTemplate>
+          <cc:CompletionListBox Name="PART_ListBox" Background="#2F3147" BorderThickness="0" >
+            <cc:CompletionListBox.ItemTemplate>
+              <DataTemplate>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Height="18">
+                  <Image Source="{Binding Image}"
+                         Width="15"
+                         Height="15"                          />
+                  <TextBlock VerticalAlignment="Center" Margin="10,0,0,0" Text="{Binding Content}" FontSize="12"  Foreground="White"/>
+                </StackPanel>
+              </DataTemplate>
+            </cc:CompletionListBox.ItemTemplate>
+          </cc:CompletionListBox>
+        </ControlTemplate>
+      </Setter>
+      <Style.Resources>
+
+        <Color x:Key="ThemeAccentColor">#CC119EDA</Color>
+        <Color x:Key="ThemeAccentColor2">#99119EDA</Color>
+        <Color x:Key="ThemeAccentColor3">#66119EDA</Color>
+        <Color x:Key="ThemeAccentColor4">#33119EDA</Color>
+
+        <Color x:Key="ThemeBackgroundColor">#212337</Color>
+        <Color x:Key="ThemeBorderLowColor">#212337</Color>
+        <Color x:Key="ThemeBorderMidColor">#212337</Color>
+        <Color x:Key="ThemeBorderHighColor">#212337</Color>
+        <Color x:Key="ThemeControlLowColor">#FF282828</Color>
+        <Color x:Key="ThemeControlMidColor">#FF505050</Color>
+        <Color x:Key="ThemeControlMidHighColor">#FF686868</Color>
+        <Color x:Key="ThemeControlHighColor">#FF808080</Color>
+        <Color x:Key="ThemeControlVeryHighColor">#FFEFEBEF</Color>
+        <Color x:Key="ThemeControlHighlightLowColor">#FFA8A8A8</Color>
+        <Color x:Key="ThemeControlHighlightMidColor">#FF828282</Color>
+        <Color x:Key="ThemeControlHighlightHighColor">#FF505050</Color>
+        <Color x:Key="ThemeForegroundColor">#FFDEDEDE</Color>
+        <Color x:Key="ThemeForegroundLowColor">#FF808080</Color>
+
+        <Color x:Key="HighlightColor">#5492FF</Color>
+        <Color x:Key="HighlightForegroundColor">#FFFFFFFF</Color>
+        <Color x:Key="ErrorColor">#FFFF0000</Color>
+        <Color x:Key="ErrorLowColor">#10FF0000</Color>
+
+        <SolidColorBrush x:Key="ThemeBackgroundBrush" Color="{DynamicResource ThemeBackgroundColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeControlBackgroundBrush" Color="{DynamicResource ThemeBackgroundColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeBorderLowBrush" Color="{DynamicResource ThemeBorderLowColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeBorderMidBrush" Color="{DynamicResource ThemeBorderMidColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeBorderHighBrush" Color="{DynamicResource ThemeBorderHighColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeControlLowBrush" Color="{DynamicResource ThemeControlLowColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeControlMidBrush" Color="{DynamicResource ThemeControlMidColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeControlMidHighBrush" Color="{DynamicResource ThemeControlMidHighColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeControlHighBrush" Color="{DynamicResource ThemeControlHighColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeControlVeryHighBrush" Color="{DynamicResource ThemeControlVeryHighColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeControlHighlightLowBrush" Color="{DynamicResource ThemeControlHighlightLowColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeControlHighlightMidBrush" Color="{DynamicResource ThemeControlHighlightMidColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeControlHighlightHighBrush" Color="{DynamicResource ThemeControlHighlightHighColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeForegroundBrush" Color="{DynamicResource ThemeForegroundColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeForegroundLowBrush" Color="{DynamicResource ThemeForegroundLowColor}"></SolidColorBrush>
+
+        <SolidColorBrush x:Key="HighlightBrush" Color="{DynamicResource HighlightColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="HighlightForegroundBrush" Color="{DynamicResource HighlightForegroundColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeAccentBrush" Color="{DynamicResource ThemeAccentColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeAccentBrush2" Color="{DynamicResource ThemeAccentColor2}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeAccentBrush3" Color="{DynamicResource ThemeAccentColor3}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeAccentBrush4" Color="{DynamicResource ThemeAccentColor4}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ErrorBrush" Color="{DynamicResource ErrorColor}"></SolidColorBrush>
+        <SolidColorBrush x:Key="ErrorLowBrush" Color="{DynamicResource ErrorLowColor}"></SolidColorBrush>
+
+        <SolidColorBrush x:Key="NotificationCardBackgroundBrush" Color="#444444" Opacity="0.75"/>
+        <SolidColorBrush x:Key="NotificationCardInformationBackgroundBrush" Color="#007ACC" Opacity="0.75"/>
+        <SolidColorBrush x:Key="NotificationCardSuccessBackgroundBrush" Color="#1F9E45" Opacity="0.75"/>
+        <SolidColorBrush x:Key="NotificationCardWarningBackgroundBrush" Color="#FDB328" Opacity="0.75"/>
+        <SolidColorBrush x:Key="NotificationCardErrorBackgroundBrush" Color="#BD202C" Opacity="0.75"/>
+
+        <SolidColorBrush x:Key="DatePickerFlyoutPresenterHighlightFill" Color="{DynamicResource ThemeAccentColor}" Opacity="0.4" />
+        <SolidColorBrush x:Key="TimePickerFlyoutPresenterHighlightFill" Color="{DynamicResource ThemeAccentColor}" Opacity="0.4" />
+
+        <SolidColorBrush x:Key="ThemeControlTransparentBrush" Color="Transparent" />
+
+        <Thickness x:Key="ThemeBorderThickness">1,1,1,1</Thickness>
+
+      </Style.Resources>
+    </Style>
+  </Application.Styles>
+</Application>

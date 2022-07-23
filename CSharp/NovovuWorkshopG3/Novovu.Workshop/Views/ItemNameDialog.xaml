@@ -1,0 +1,34 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="387" d:DesignHeight="142" Width="387" Height="142" Background="#212337"
+ 
+        x:Class="Novovu.Workshop.Views.ItemNameDialog"
+        Title="ItemNameDialog">
+  <StackPanel Margin="0,0,0,0">
+     <TextBlock Text="{Binding Title}" FontStyle="Normal" FontWeight="Bold" FontSize="18" Foreground="White" Margin="12,8,0,0"></TextBlock>
+    <StackPanel Margin="70,10,0,0">
+      <TextBlock Text="ITEM NAME" FontStyle="Normal" FontWeight="Medium" FontSize="12" Foreground="White"></TextBlock>
+      <StackPanel Orientation="Horizontal" Margin="-40,0,0,0">
+        <Image Width="19" Height="19">
+
+        </Image>
+        <Border Margin="20,0,0,0" CornerRadius="2" Width="300" BorderThickness="2" BorderBrush="#33354A" Background="#212337">
+          <TextBox BorderThickness="0" Background="Transparent" Foreground="White" FontSize="13" FontWeight="SemiBold" TextAlignment="Left" VerticalAlignment="Center" Text="{Binding Text}">  </TextBox>
+        </Border>
+      </StackPanel>
+    </StackPanel>
+    <StackPanel Margin="0,20,0,0" Orientation="Horizontal" HorizontalAlignment="Right">
+      <Border  Background="#2F3147" BorderThickness="2" BorderBrush="#515367" CornerRadius="5"   Margin="0,0,20,0" Width="78" Height="29">
+        <Button BorderBrush="Transparent" Command="{Binding Cancel}"  Background="Transparent" FontSize="14" FontWeight="Medium" HorizontalAlignment="Center" Foreground="#D3D3D8"  Width="78" Height="29">Cancel</Button>
+      </Border>
+      <Border  Background="#2F3147" BorderThickness="2" BorderBrush="#515367" CornerRadius="5"  Margin="0,0,20,0" Width="78" Height="29">
+        <Button BorderBrush="Transparent" Command="{Binding OK}" Background="Transparent" FontSize="14" FontWeight="Medium" HorizontalAlignment="Center" Foreground="#D3D3D8"  Width="78" Height="29">Create</Button>
+      </Border>
+
+    </StackPanel>
+
+  </StackPanel>
+
+</Window>

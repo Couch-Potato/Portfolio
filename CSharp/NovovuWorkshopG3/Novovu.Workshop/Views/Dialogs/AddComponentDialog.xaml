@@ -1,0 +1,48 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Width="400" Height="500" Title="Component Selector" Icon="avares://Novovu.Workshop/Assets/avalonia-logo.ico"
+        x:Class="Novovu.Workshop.Views.Dialogs.AddComponentDialog"
+        Background="#212337">
+  <Window.Styles>
+    <Style Selector="StackPanel.item:pointerover">
+      <Setter Property="Margin" Value="0,0,0,0"></Setter>
+      <Setter Property="Background" Value="#515367"></Setter>
+    </Style>
+  </Window.Styles>
+  
+  <DockPanel Width="400" Height="500">
+    <Panel Background="Transparent" Width="400" Height="40" DockPanel.Dock="Top">
+      <StackPanel>
+        <StackPanel Classes="item" Orientation="Horizontal" >
+          <Image Margin="10,5,0,5" Source="avares://Novovu.Workshop/Assets/icon-object.png" Width="30" Height="30"></Image>
+          <TextBlock VerticalAlignment="Center" Foreground="White" FontSize="15" FontWeight="SemiBold" Margin="20,0,0,0">Rigid Body Component</TextBlock>
+          <TextBlock VerticalAlignment="Center" Foreground="#8D8EA1" FontSize="13" FontWeight="SemiBold" Margin="20,0,0,0">Novovu.Physics</TextBlock>
+        </StackPanel>
+        <StackPanel Classes="item" Orientation="Horizontal" >
+          <Image Margin="10,5,0,5" Source="avares://Novovu.Workshop/Assets/icon-object.png" Width="30" Height="30"></Image>
+          <TextBlock VerticalAlignment="Center" Foreground="White" FontSize="15" FontWeight="SemiBold" Margin="20,0,0,0">Rigid Body Component</TextBlock>
+          <TextBlock VerticalAlignment="Center" Foreground="#8D8EA1" FontSize="13" FontWeight="SemiBold" Margin="20,0,0,0">Novovu.Physics</TextBlock>
+        </StackPanel>
+
+        <StackPanel Classes="item" Orientation="Horizontal" >
+          <Image Margin="10,5,0,5" Source="avares://Novovu.Workshop/Assets/icon-object.png" Width="30" Height="30"></Image>
+          <TextBlock VerticalAlignment="Center" Foreground="White" FontSize="15" FontWeight="SemiBold" Margin="20,0,0,0">Rigid Body Component</TextBlock>
+          <TextBlock VerticalAlignment="Center" Foreground="#8D8EA1" FontSize="13" FontWeight="SemiBold" Margin="20,0,0,0">Novovu.Physics</TextBlock>
+        </StackPanel>
+
+
+      </StackPanel>
+      
+    </Panel>
+    <Panel Background="#2F3147" Width="400" Height="40" DockPanel.Dock="Bottom">
+      <StackPanel Orientation="Horizontal">
+        <Button DockPanel.Dock="Left" HorizontalAlignment="Left" Margin="0,0,0,0" Width="100" Foreground="White" FontSize="13" FontWeight="SemiBold" Background="Transparent"  BorderThickness="0">
+          Select
+        </Button>
+      </StackPanel>
+    </Panel>
+    <Panel Background="Transparent" Width="400" Height="40" DockPanel.Dock="Bottom"></Panel>
+  </DockPanel>
+</Window>

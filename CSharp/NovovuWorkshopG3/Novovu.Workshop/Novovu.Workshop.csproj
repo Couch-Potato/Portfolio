@@ -1,0 +1,222 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworks>net472</TargetFrameworks>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <ApplicationIcon>novovuws.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="**\*.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <AvaloniaResource Include="**\*.xaml">
+      <SubType>Designer</SubType>
+    </AvaloniaResource>
+    <AvaloniaResource Include="Assets\**" />
+
+
+    <AvaloniaResource Remove="Views\AssetItem.xaml" />
+    <AvaloniaResource Remove="Views\AssetViewerView.xaml" />
+    <AvaloniaResource Remove="Views\Dialogs\AddComponentDialog.xaml" />
+    <AvaloniaResource Remove="Views\Dialogs\ErrorDialog.xaml" />
+    <AvaloniaResource Remove="Views\HierarchyView.xaml" />
+    <AvaloniaResource Remove="Views\ItemNameDialog.xaml" />
+    <AvaloniaResource Remove="Views\LoadDialog.xaml" />
+    <AvaloniaResource Remove="Views\MenuBar.xaml" />  
+    <AvaloniaResource Remove="Views\PropertiesView.xaml" />
+    <AvaloniaResource Remove="Views\Properties\EnumView.xaml" />
+    <AvaloniaResource Remove="Views\Properties\Properties.xaml" />
+    <AvaloniaResource Remove="Views\Properties\StringView.xaml" />
+    <AvaloniaResource Remove="Views\Properties\Vector3.xaml" />
+    <AvaloniaResource Remove="Views\WorkspaceSelectorView.xaml" />
+    
+    <None Remove="Views\Dialogs\ErrorDialog.xaml" />
+    <None Remove="Views\ItemNameDialog.xaml" />
+    <None Remove="Views\LoadDialog.xaml" />
+    <None Remove="Views\PropertyViewCategoryView.xaml" />
+    <AvaloniaResource Remove="Views\WorkspaceSelectionItem.xaml" />
+    <None Remove="Views\AssetItem.xaml" />
+    <None Remove="Views\AssetViewerView.xaml" />
+    <None Remove="Views\Dialogs\AddComponentDialog.xaml" />
+    <None Remove="Views\HierarchyView.xaml" />
+    <None Remove="Views\MenuBar.xaml" />
+    <None Remove="Views\Properties\EnumView.xaml" />
+    <None Remove="Views\Properties\Properties.xaml" />
+    <None Remove="Views\Properties\StringView.xaml" />
+    <None Remove="Views\Properties\Vector3.xaml" />
+    <None Remove="Views\PropertyViewCategoryView.xaml" />
+    <None Remove="Views\WorkspaceSelectionItem.xaml" />
+    <None Remove="Views\WorkspaceSelectorView.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.10.0-preview5" />
+    <PackageReference Include="Avalonia.Angle.Windows.Natives" Version="2.1.0.2019013001" />
+    <PackageReference Include="Avalonia.AvaloniaEdit" Version="0.10.0-preview1" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.0-preview5" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.0-preview5" />
+    <PackageReference Include="DiscordRichPresence" Version="1.0.150" />
+    <PackageReference Include="Dock.Avalonia" Version="0.10.0-preview5" />
+    <PackageReference Include="Dock.Avalonia.Themes.Default" Version="0.10.0-preview5" />
+    <PackageReference Include="Dock.Model" Version="0.10.0-preview5" />
+    <PackageReference Include="Dock.Model.ReactiveUI" Version="0.10.0-preview5" />
+    <PackageReference Include="Microsoft.ClearScript" Version="6.0.2" />
+    <PackageReference Include="SDL" Version="1.2.15.16" />
+    <PackageReference Include="Sentry" Version="2.1.6" />
+    <PackageReference Include="System.Collections.Immutable" Version="1.7.1" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="5.0.0" />
+    <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PropertiesView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\HierarchyView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MenuBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\WorkspaceSelectionItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\AssetViewerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\AssetItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Properties\Vector3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Properties\StringView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Properties\EnumView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\WorkspaceSelectorView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Novovu.Controls\Novovu.Controls.csproj" />
+    <ProjectReference Include="..\Novovu.Workshop.Shared\Novovu.Workshop.Shared.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Dialogs\AddComponentDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PropertyViewCategoryView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\LoadDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ItemNameDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Dialogs\ErrorDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\VordioEngine\Novovu.Xenon.AvaloniaControl\bin\Debug\net472\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Novovu.Xenon">
+      <HintPath>..\..\VordioEngine\Novovu.Xenon.AvaloniaControl\bin\Debug\net472\Novovu.Xenon.dll</HintPath>
+    </Reference>
+    <Reference Include="Novovu.Xenon.AvaloniaControl">
+      <HintPath>..\..\VordioEngine\Novovu.Xenon.AvaloniaControl\bin\Debug\net472\Novovu.Xenon.AvaloniaControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Novovu.Xenon.XEF">
+      <HintPath>..\..\VordioEngine\Novovu.Xenon.XEF\bin\Debug\Novovu.Xenon.XEF.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\AssetViewerView.xaml.cs">
+      <DependentUpon>AssetViewerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\HierarchyView.xaml.cs">
+      <DependentUpon>HierarchyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PropertiesView.xaml.cs">
+      <DependentUpon>PropertiesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\WorkspaceSelectorView.xaml.cs">
+      <DependentUpon>WorkspaceSelectorView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Grammar\JS.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="x64\libopenal.so.1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="x64\libSDL2-2.0.so.0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="x64\SDL2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="x64\soft_oal.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="x86\libopenal.so.1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="x86\libSDL2-2.0.so.0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="x86\SDL2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="x86\soft_oal.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+
+  <None Include="$(SolutionDir)FBXC\**" CopyToOutputDirectory="PreserveNewest" LinkBase="FBXC\" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <AvaloniaResource Update="Assets\3DOBJECT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AvaloniaResource>
+    <AvaloniaResource Update="Assets\COMPONENT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AvaloniaResource>
+    <AvaloniaResource Update="Assets\COMPONENT_REPO.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AvaloniaResource>
+    <AvaloniaResource Update="Assets\GAMEOBJECT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AvaloniaResource>
+  </ItemGroup>
+    
+
+</Project>

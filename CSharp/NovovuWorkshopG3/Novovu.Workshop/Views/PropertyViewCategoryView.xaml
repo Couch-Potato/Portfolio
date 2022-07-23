@@ -1,0 +1,38 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="30"
+             xmlns:props="clr-namespace:Novovu.Workshop.Views.Properties"
+             x:Class="Novovu.Workshop.Views.PropertyViewCategoryView" Background="#212337">
+  <ItemsControl Items="{Binding Properties}">
+    <ItemsControl.ItemTemplate>
+      <DataTemplate>
+        <Panel Width="270" Background="#212337">
+          <StackPanel>
+            <StackPanel Height="30" VerticalAlignment="Center" Orientation="Horizontal">
+              <TextBlock Background="#212337"  Foreground="#8D8EA1" FontSize="13" FontWeight="SemiBold" Margin="15,0,0,0" Text="{Binding PropertyName}"></TextBlock>
+              <TextBlock Background="#212337"  Foreground="#8D8EA1" FontSize="13" FontWeight="Black" Margin="5,0,0,0" Text="{Binding PropertySet}"></TextBlock>
+            </StackPanel>
+            <ItemsControl Items="{Binding Properties}">
+              <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                  <StackPanel>
+                    <props:StringView IsVisible="{Binding IsString}"></props:StringView>
+                    <props:Vector3 IsVisible="{Binding IsVector3}"></props:Vector3>
+                    <props:EnumView IsVisible="{Binding IsEnum}"></props:EnumView>
+                    <props:ButtonView IsVisible="{Binding IsCommand}"></props:ButtonView>
+                  </StackPanel>
+                </DataTemplate>
+              </ItemsControl.ItemTemplate>
+            </ItemsControl>
+          </StackPanel>
+
+        </Panel>
+      </DataTemplate>
+    </ItemsControl.ItemTemplate>
+  </ItemsControl>
+
+     
+  
+</UserControl>

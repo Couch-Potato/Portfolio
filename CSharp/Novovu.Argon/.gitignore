@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Novovu.Argon/v16/Server/sqlite3
+/Novovu.Argon/obj/x86/Debug
+/Novovu.Argon.Testbench/bin/x86/Debug
+/packages
+/.vs
+/Novovu.Argon/bin/x86/Debug
+/Novovu.Argon/obj/Debug
+/Novovu.Argon.AGBIN/obj/Debug
+/Novovu.Argon.ArgonCLI/bin/x86/Debug
+/Novovu.Argon.Example/bin/Debug
+/Novovu.Argon.RTFramework/bin
+/Novovu.Argon.RTFramework/obj

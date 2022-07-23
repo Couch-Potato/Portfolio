@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.clearscript\6.0.2\build\netcoreapp3.1\Microsoft.ClearScript.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.clearscript\6.0.2\build\netcoreapp3.1\Microsoft.ClearScript.targets')" />
+    <Import Project="$(NuGetPackageRoot)cefsharp.common\81.3.100\build\CefSharp.Common.targets" Condition="Exists('$(NuGetPackageRoot)cefsharp.common\81.3.100\build\CefSharp.Common.targets')" />
+    <Import Project="$(NuGetPackageRoot)cefsharp.offscreen\81.3.100\build\CefSharp.OffScreen.targets" Condition="Exists('$(NuGetPackageRoot)cefsharp.offscreen\81.3.100\build\CefSharp.OffScreen.targets')" />
+    <Import Project="$(NuGetPackageRoot)accord\3.8.0\build\Accord.targets" Condition="Exists('$(NuGetPackageRoot)accord\3.8.0\build\Accord.targets')" />
+    <Import Project="$(NuGetPackageRoot)accord.video.ffmpeg.x64\3.8.0\build\Accord.Video.FFMPEG.x64.targets" Condition="Exists('$(NuGetPackageRoot)accord.video.ffmpeg.x64\3.8.0\build\Accord.Video.FFMPEG.x64.targets')" />
+  </ImportGroup>
+</Project>

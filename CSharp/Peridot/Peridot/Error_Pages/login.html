@@ -1,0 +1,73 @@
+﻿<html>
+<style>
+    h1 {
+        font-size: 600%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: block;
+        text-align: center;
+        vertical-align: center;
+    }
+
+    h2 {
+        font-size: 300%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: block;
+        text-align: center;
+        vertical-align: center;
+    }
+
+    p {
+        font-size: 200%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        vertical-align: center;
+    }
+
+    input {
+        margin: 20px auto;
+        display: block;
+        font-size: 150%;
+        border-radius: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 1px solid black;
+        text-align: center;
+        transition-property: all;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transition: .5s;
+    }
+
+        input:hover {
+            border: 1px solid blue;
+            transition: .5s;
+        }
+
+    button {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: block;
+        margin: 20px auto;
+        font-size: 150%;
+        border-radius: 5px;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: white;
+        border: 1px solid black;
+        transition-property: all;
+        transition: .5s;
+    }
+
+        button:hover {
+            background-color: black;
+            color: white;
+            transition: .5s;
+        }
+</style>
+<title>Authentication Required</title>
+<p>Authentication Required. </p>
+<form method="POST" action="">
+    <input name="username" placeholder="Username">
+    <input name="password" placeholder="Password" type="password">
+    <button type="submit">Login</button>
+</form>
+<html>

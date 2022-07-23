@@ -1,0 +1,3 @@
+<Bootstrap name="core">
+    <Script src="core.js"/>
+</Bootstrap>

@@ -1,0 +1,22 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450" Width="481" Height="346" Background="#212337"
+        x:Class="Novovu.Workshop.Views.Dialogs.ErrorDialog"
+
+        Title="Error Dialog">
+     <StackPanel Margin="20">
+    <StackPanel Orientation="Horizontal">
+      <Image Source="avares://Novovu.Workshop/Assets/error.png" Width="54" Height="54"></Image>
+      <StackPanel Margin="20,0,0,0">
+        <TextBlock FontSize="24" FontWeight="Bold" Foreground="#FF7D7C"> Critcal Error</TextBlock>
+        <TextBlock FontSize="14" FontWeight="Bold" Foreground="White"> Yikes. Something happened.</TextBlock>
+      </StackPanel>
+      
+    </StackPanel>
+    <Panel Height="1" Margin="0,10,0,0" Background="#D7D9EA"></Panel>
+    <TextBlock Foreground="#AFAFAF" FontWeight="Black" FontSize="20" Margin="0,10,0,0" Text="{Binding ExceptionTitle}">  </TextBlock>
+    <TextBlock Foreground="#F0F0F0" FontWeight="Medium" FontSize="14" Margin="0,3,0,0" Text="{Binding ExcpetionMessage}" TextWrapping="Wrap">  </TextBlock>
+  </StackPanel>
+</Window>

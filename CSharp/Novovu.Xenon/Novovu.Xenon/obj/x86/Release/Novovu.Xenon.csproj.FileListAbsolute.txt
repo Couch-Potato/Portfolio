@@ -1,0 +1,2 @@
+C:\Users\Jeremy\Desktop\NovovuShit\Engine\XenonEngine\Novovu.Xenon\obj\x86\Release\Novovu.Xenon.csprojAssemblyReference.cache
+C:\Users\Jeremy\Desktop\NovovuShit\Engine\XenonEngine\Novovu.Xenon\obj\x86\Release\Novovu.Xenon.csproj.CoreCompileInputs.cache

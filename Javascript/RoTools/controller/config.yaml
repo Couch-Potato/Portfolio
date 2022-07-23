@@ -1,0 +1,116 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01ESXdOekF6TURFek1Wb1hEVE13TURJd05EQXpNREV6TVZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBT3hnClozK1ZKdTJESkgrMU1YYjNreWF6T3pucXFKdVh0aFB6UjU0eHEzMEdJR0xXbkdKa1FEb0hXdkxlNHRUTXpJTjQKb1NLRFNFTkd3N3VLUlVlWTl2SUFjOW40NEI1Sll6a2ZEMEtvQXg2ZWxTRWpQN09BOS9mVmx5YjFkSVhJTmZXWAp4bkFiUksvWUY5N0RDY2VGMmdMaVdNYk1VMzVOb3l2dVRYQWpwVVNIZmxUbmZ3bDk1REVFSytxV2xQOW9vNWp5CklEelZpM2hrVUx6cHIwL1JIbldUK0h0Vk5mczN4aFJPT29vWWdOV09hcWw5ZXc1aWpSLzJtbmhhTDg1eXUyNDcKTlZJUFV1YUwwSm8zY0M1YjJmWUJzOWROcE13bGliR1ViVExKem93L2hIZEIrUEF0NUJnaEJtR2x2ZzgxMy95MAp5WExzaGordTBaT2wzTUl5OVJFQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFCL0pwcnVnMGZrRjZkZ3k5RUxWVEhhOHB3NzkKdUlrMUdkWFR6MmNEN3RIcEg2Y0hwRDlVTmd0cXc4MVIzVExGbzl3ejFlQmFXUkN5bi90NDBYMXlpUGVacEMvSgp1a01FNUx1NHlZTGIwWW5MWjV2T3JHaE1zNGxTWW5BUDVrV2RuejIvVTJwdXQ5WjdyTU1BVUpSZTQyTzRuaCtOClNSc3FvOTV4WDExN1IxWlhobzFtNzZHTmhJZlFUUTd5eEhkYXNjRkZ6a3Q1bmFCUFlyNDJIWG1lWWN0Zk14dkUKYWNRait2cWxCQ2RkbWd0SmRQemRyazM2ZG9RUmFENzlIaFJmUUhWQStOZjMxeVo5czJYWk1pWXFlOG9Zd3R5ZgpjNjZpNXhSaEtibDhHWWJaZnBLRWZPZkNrMHJoT0tEa1NEb0hxUHBtaXFqRGRnL3dxRmNQaklRaXJrTT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+    server: https://D91E4E9E4FC0FA680DCB63B09B9AEF39.sk1.us-east-2.eks.amazonaws.com
+  name: arn:aws:eks:us-east-2:195059080430:cluster/novovu-test
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURKekNDQWcrZ0F3SUJBZ0lDQm5Vd0RRWUpLb1pJaHZjTkFRRUxCUUF3TXpFVk1CTUdBMVVFQ2hNTVJHbG4KYVhSaGJFOWpaV0Z1TVJvd0dBWURWUVFERXhGck9ITmhZWE1nUTJ4MWMzUmxjaUJEUVRBZUZ3MHlNREE0TURRdwpNREkwTWpKYUZ3MDBNREE0TURRd01ESTBNakphTURNeEZUQVRCZ05WQkFvVERFUnBaMmwwWVd4UFkyVmhiakVhCk1CZ0dBMVVFQXhNUmF6aHpZV0Z6SUVOc2RYTjBaWElnUTBFd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUIKRHdBd2dnRUtBb0lCQVFDOHhJQlFCdGI0dlZpc014LzNsQnIreXRYcHFnT1dMbHJZRkdjTUNkYi9vbVV3Z3UzegpKM1YzQnltKzEwckIvMTE1S054dWFUNStzT25FNGVDYjlCcFVVdDcvL1A3RmVLeWZlYlEyVk9SNWIrTkdGU2F3Cmw2Q09nQmhJSnRHekxBM1lvaWpYS0RPWVR3SzZBMEIzMmNuejRFdnRBcVNVMG03dVV0ZTBTc2tOdldJbE9aM2cKemZjcXNmSlhGTVVXS2ZrckJqaU5Yb2JXS2UxUzB4UU1FRHhRckdrdG9vMnJPeW9EVnNncjV6UmtRMFY1eFZDOQpOclZmOVV0T2RJaERYWk1GaVFIaG9USUd6SUxqVTI5QjM0VTVpWUlKdDduNUxjanc3b0t1Mysxa2RGMmpKRFczCnpmOHJIVzhOTTFwa0pYUWJ0Z2dqTEx0UlRETEcwZHRHeEV5ckFnTUJBQUdqUlRCRE1BNEdBMVVkRHdFQi93UUUKQXdJQmhqQVNCZ05WSFJNQkFmOEVDREFHQVFIL0FnRUFNQjBHQTFVZERnUVdCQlRQbXE1TDRiRi95cjk4Sjgvego5SUZmdmFmd3F6QU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FRRUFpYzNpQVdZanVKQm5OTjNpbFVFdDZYZHl4aWNvCkl6Zm9LMFdSdndrU21nZ082RWsrTHl5bGpJMlZ4VGU5TzhUVk51bjVZYy9XUzdSOU4wb1VrUkIxcDFzR3VJL0UKUEYweUpoTU1VVE5lOTZuUXZRR05MZkxldWsrMS9aeVo0ZTBhVk5pV1ZVbHZieklDbnBLTlN4R2NsSXZETGVZWQpoLzkrR0R2dWNqcEZTeVc3SEd3dzlZZFpvUU42MnBQaTVIOGNvTTM2YnNYSVdrNE9RazRSeWFRblZ4Mm1uV1BzCk5zSzZjV3Qxclg4eXdCWTF3WmRYbmRzSTZGRzBBN3pCTXY1UkdmNWxoNEV3alg4N3pjZi95MVMrV1kwV0lvcnQKdVJuSzM5VWMyUm9SWjY2eHpuNDRzQ0wyaXBTVHdVd2hYZ21MY0FBbG9hNW1aaDIxb2FrOHphNk1VQT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+    server: https://d806ace7-93c7-4973-92ff-f1e33f3bd655.k8s.ondigitalocean.com
+  name: do-nyc1-kube-personal
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURKekNDQWcrZ0F3SUJBZ0lDQm5Vd0RRWUpLb1pJaHZjTkFRRUxCUUF3TXpFVk1CTUdBMVVFQ2hNTVJHbG4KYVhSaGJFOWpaV0Z1TVJvd0dBWURWUVFERXhGck9ITmhZWE1nUTJ4MWMzUmxjaUJEUVRBZUZ3MHlNREF5TURndwpNek16TURWYUZ3MDBNREF5TURnd016TXpNRFZhTURNeEZUQVRCZ05WQkFvVERFUnBaMmwwWVd4UFkyVmhiakVhCk1CZ0dBMVVFQXhNUmF6aHpZV0Z6SUVOc2RYTjBaWElnUTBFd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUIKRHdBd2dnRUtBb0lCQVFDNC9PWkJQZllkeEVjbEdIczFpV2NPSVpJcUt0YWtxelV1c0VPSUJicGZiaHpldUVOcAo0OU1HM2hQRmFaN1BKNnNZK1VsOVd1ejhGZnpaQjhJNWF0KzRBMlZkdjZodVEydDBTRWFiTkQwUjJLQU1RVnlLClFmcW9vREU4dmZYNVlEcm5hUUt2elV0R2UwTWkvOXRRWFFWQU56eUNPdkJadlRweTlhNm40TjNYbGRuVnNGOWYKSzUxYWJFMDlDSkVnZFdaWEhyQjFQWnBVa1Q4S1VCOUVmRmVwV2cvVFlXOTNWYmRScjJabXBoR3BnY05JaHN2awo0L0RSYVpoUUJ2eFMveVArUjFJaEVaczUvaGZMekE2d2traVhFNkFVQ1JEMzR3dFV2K0o0ZUc0dnBMOGJJQTBmCkJZekZDcCtGdFAzbi9vTzFiMmZTQThVbUtUc0RpMFRNN1IrRkFnTUJBQUdqUlRCRE1BNEdBMVVkRHdFQi93UUUKQXdJQmhqQVNCZ05WSFJNQkFmOEVDREFHQVFIL0FnRUFNQjBHQTFVZERnUVdCQlNXc28vYlhvd0NLT1ZXRlRHVwpsMUNPUUZmbk1UQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FRRUFUdy9LSzQxRFFpQXVHaVJYMW45dlNqMUpTTGR2CkhpTVMrdGhyYVFkVlR2WU5OTXpjRVpOL3Zidk0vaDVPREJGNHRFSHdRQkNZTE9xTTloODVBN0loRHY2NTVsSloKZGFCVTBDa3RMZ0RlK3BvVnNtYkFFd1Z5bUtGV1Bwb3plbTRjWStHWkFjUExvUWN0akVaS25Tb1U0ZjZXZ0pQOApRUWl4SEduTVZUWTFFay9PcDNjeWZFNVNKd3R4b2JLUjYrZ0tZV2hvb1BtVW9ablJ6dUVkN2RNenpieThlUXFHClR3WlppQVB1WkJtYm5FM21seVpadjZpZHlzU3BubElkMnU5YTIrZ09qRW1ocEM0eFNsLzZ5NXJSbGZlOEpxOEcKRlduRGd0U3kzOXIwcEV2Smg5WC9UTCtPUDVscFBNRk9JVEJ3aVlHaFN0d0orK3NGZUpvendnOStBZz09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+    server: https://a4febb8f-b1b4-4634-a403-c5e58002de22.k8s.ondigitalocean.com
+  name: do-sfo2-k8s-novovu-test
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURERENDQWZTZ0F3SUJBZ0lSQUtLRHVmNVVIS1ZNTEVIVlpYRkxaRGt3RFFZSktvWklodmNOQVFFTEJRQXcKTHpFdE1Dc0dBMVVFQXhNa1pEWTVNR1ZtWVRjdFpESmxaaTAwWkRFMExXSXdOamd0TkdKalpEVXpPR1ptTUdZeApNQjRYRFRJd01EUXlNakUzTWpBeE5sb1hEVEkxTURReU1URTRNakF4Tmxvd0x6RXRNQ3NHQTFVRUF4TWtaRFk1Ck1HVm1ZVGN0WkRKbFppMDBaREUwTFdJd05qZ3ROR0pqWkRVek9HWm1NR1l4TUlJQklqQU5CZ2txaGtpRzl3MEIKQVFFRkFBT0NBUThBTUlJQkNnS0NBUUVBeVpzb3NpWUpYaXFyRGVQL0g2eWNzZ3o5WnBqMUlBMTEyUzE0azZCaQpDeXVvOWJkUDlHSW5vdjVyNlNEalJ5eEV1OUxiRXlmNkpEeGt6TFN0N1R4a1duaGZqSVQ1YW1jZUZGTXhyb2NUClhpU3ZVZW1MK2NVcy9IMW1lbDVmODFZekEvaGJFVWR5Rm5iS2c4SlhvU083Y3ZtQTVnWkpPVE1ZbXpjN1h3RU0KYnM3aXRwenJOaFVOajRVN2luOUNvVGZkcndBM1VGRlRMYU4yaCsxUGhvWGhneEtDMFFONUJNTGQzb1lVQWV4eAp5SGY0VFp2L0JtYXFzT3owT1M5UW8wOXVaVDdCb1EvMG9NQlhlU3ZkRmV2K2wrYjNRUkhCNDVPVHFYejVOZnBUCnZSdTZSQy8xV05ZUXVtV2FmWS9USytPTmZzdTJmdG82MlBPM0RFMFQ0cDFsUndJREFRQUJveU13SVRBT0JnTlYKSFE4QkFmOEVCQU1DQWdRd0R3WURWUjBUQVFIL0JBVXdBd0VCL3pBTkJna3Foa2lHOXcwQkFRc0ZBQU9DQVFFQQplRDd3WDFUTHhWbisxWTFtNlhPYWI2QlJ5TGpEYkpBc3p3emdKUnhMb01sUTR6YmdpUjg0bVhObE96a0hkblZvCkNYcnVjNDFJcUtjOWRvZURDcG1QYXN5NUZKbERZV1FxYjNsQW8rWEZUUXpjR0NjNzNCdXZUM3pTYTBHckVHSkQKMnRrdVBnNmtmcHFqVVVlMlRJRlY1clh3bGZJZ1R1eDQ4cmxQQTFJK3o0T2lWMWYxajJoYzgvbHpQa3EwU01uawpBOXpMbmk4QkFCc1l3U3N3ODdyb1F4RVRxbDhwRTZuNWlRVTBFQVdzMDB6UFJqRWp1OEVGenZRdzZ6Tk1mQ1VrCnY3TG44aWYrZGhzUmR5K2ZaT1F5dVpHZk1xelh6WUNuZGNZUkdwbWhYY3VpYUEwSWpJYmtLRXkzWFlobUxQa0IKdE9EMnZpWmsvNFJGeGpXYmhFeHMvZz09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+    server: https://34.68.110.249
+  name: gke_jaysmiscstuff_us-central1-c_mayflowerfc
+- cluster:
+    certificate-authority: C:\Users\Jeremy\.minikube\ca.crt
+    extensions:
+    - extension:
+        last-update: Sat, 06 Mar 2021 12:21:49 CST
+        provider: minikube.sigs.k8s.io
+        version: v1.18.0
+      name: cluster_info
+    server: https://127.0.0.1:49154
+  name: minikube
+contexts:
+- context:
+    cluster: arn:aws:eks:us-east-2:195059080430:cluster/novovu-test
+    user: arn:aws:eks:us-east-2:195059080430:cluster/novovu-test
+  name: arn:aws:eks:us-east-2:195059080430:cluster/novovu-test
+- context:
+    cluster: do-nyc1-kube-personal
+    user: do-nyc1-kube-personal-admin
+  name: do-nyc1-kube-personal
+- context:
+    cluster: do-sfo2-k8s-novovu-test
+    user: do-sfo2-k8s-novovu-test-admin
+  name: do-sfo2-k8s-novovu-test
+- context:
+    cluster: gke_jaysmiscstuff_us-central1-c_mayflowerfc
+    user: gke_jaysmiscstuff_us-central1-c_mayflowerfc
+  name: gke_jaysmiscstuff_us-central1-c_mayflowerfc
+- context:
+    cluster: minikube
+    extensions:
+    - extension:
+        last-update: Sat, 06 Mar 2021 12:21:49 CST
+        provider: minikube.sigs.k8s.io
+        version: v1.18.0
+      name: context_info
+    namespace: default
+    user: minikube
+  name: minikube
+current-context: minikube
+kind: Config
+preferences: {}
+users:
+- name: arn:aws:eks:us-east-2:195059080430:cluster/novovu-test
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      args:
+      - --region
+      - us-east-2
+      - eks
+      - get-token
+      - --cluster-name
+      - novovu-test
+      command: aws
+      env: null
+- name: do-nyc1-kube-personal-admin
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1beta1
+      args:
+      - kubernetes
+      - cluster
+      - kubeconfig
+      - exec-credential
+      - --version=v1beta1
+      - --context=default
+      - d806ace7-93c7-4973-92ff-f1e33f3bd655
+      command: C:\Users\Jeremy\Downloads\doctl.exe
+      env: null
+- name: do-sfo2-k8s-novovu-test-admin
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1beta1
+      args:
+      - kubernetes
+      - cluster
+      - kubeconfig
+      - exec-credential
+      - --version=v1beta1
+      - --context=default
+      - a4febb8f-b1b4-4634-a403-c5e58002de22
+      command: doctl
+      env: null
+- name: gke_jaysmiscstuff_us-central1-c_mayflowerfc
+  user:
+    auth-provider:
+      config:
+        access-token: ya29.a0AfH6SMASp6Sf8PvVpt0bVrrC7RSnx1gV74EJhwKwBklRHhs2jCejRN23R2F8UoT4iLkAUV4vTLcbQ1wEtfU4pHXWSrfluqy7XsZjz0zM0oz_aAIFLtzHSwH7DK3hf2I0vzR1vflcXbD9ZigUNvo8JiDeF9yW5CPgvGixweQ3N1tROw
+        cmd-args: config config-helper --format=json
+        cmd-path: C:\Users\Jeremy\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud.cmd
+        expiry: "2020-07-18T21:40:40Z"
+        expiry-key: '{.credential.token_expiry}'
+        token-key: '{.credential.access_token}'
+      name: gcp
+- name: minikube
+  user:
+    client-certificate: C:\Users\Jeremy\.minikube\profiles\minikube\client.crt
+    client-key: C:\Users\Jeremy\.minikube\profiles\minikube\client.key

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>RoTools</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css">
+  <link rel="stylesheet" href="../assets/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../assets/vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End Plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../assets/css/shared/style.css">
+  <!-- endinject -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="../assets/css/main/style.css">
+  <!-- End Layout styles -->
+  <link rel="shortcut icon" href="../assets/images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+        <a class="navbar-brand brand-logo" href="index.html">
+          <img src="../assets/images/logo_7.svg" alt="logo" />
+        </a>
+        <a class="navbar-brand brand-logo-mini" href="index.html">
+          <img src="../assets/images/logo-mini_7.svg" alt="logo" />
+        </a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="mdi mdi-menu"></span>
+        </button>
+        <form action="#" class="form form-search ml-auto d-none d-md-flex">
+
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown d-none d-xl-inline-flex">
+            <a class="nav-link dropdown-toggle pl-4 d-flex align-items-center" id="UserDropdown" href="#"
+              data-toggle="dropdown" aria-expanded="false">
+              <div class="count-indicator d-inline-flex mr-3">
+                <img class="img-xs rounded-circle"
+                  src="https://tr.rbxcdn.com/3d035a67f15d1d84ee11507affaac230/150/150/AvatarHeadshot/Png"
+                  alt="Profile image">
+                <span class="count count-sm bg-inverse-primary"></span>
+              </div>
+              <span class="profile-text font-weight-medium">siteowner</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+
+              <a class="dropdown-item mt-2"> Billing </a>
+              <a class="dropdown-item"> Manage Settings </a>
+              <a class="dropdown-item"> Sign Out </a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <!-- partial:partials/_settings-panel.html -->
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas dynamic-active-class-disabled" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="blank_page.html">
+              <i class="menu-icon mdi mdi-cube-outline"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" data-toggle="collapse" href="#mod-dropdown" aria-expanded="false"
+              aria-controls="mod-dropdown">
+              <i class="menu-icon mdi mdi-gavel"></i>
+              <span class="menu-title">Moderation</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="mod-dropdown">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">View Servers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Lookup User</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#log-dropdown" aria-expanded="false"
+              aria-controls="log-dropdown">
+              <i class="menu-icon mdi mdi-code-braces"></i>
+              <span class="menu-title">Logging</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="log-dropdown">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">View Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">View Server Logs</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#data-dropdown" aria-expanded="false"
+              aria-controls="data-dropdown">
+              <i class="menu-icon mdi mdi-database"></i>
+              <span class="menu-title">Data</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="data-dropdown">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">View Datasets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">View User Data</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#settings-dropdown" aria-expanded="false"
+              aria-controls="settings-dropdown">
+              <i class="menu-icon mdi mdi-settings"></i>
+              <span class="menu-title">Settings</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="settings-dropdown">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Game Keys</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">API Keys</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper" style="margin-top: 0;">
+          <div class="content-header d-flex flex-column flex-md-row">
+            <h4 class="mb-0">Script Logs</h4>
+          </div>
+          <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Log Types</h4>
+                <div class="row ml-md-0 mr-md-0 vertical-tab tab-minimal">
+                  <ul class="nav nav-tabs col-md-2 justify-content-between" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="tab-2-1" data-toggle="tab" href="#dashboard-2-1" role="tab"
+                        aria-controls="dashboard-2-1" aria-selected="true">
+                        <i class="mdi mdi-speedometer"></i>Recent</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="tab-2-2" data-toggle="tab" href="#message-2-2" role="tab"
+                        aria-controls="message-2-2" aria-selected="false">
+                        <i class="mdi mdi-message-outline"></i>Messages</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="tab-2-3" data-toggle="tab" href="#campaigns-2-3" role="tab"
+                        aria-controls="campaigns-2-3" aria-selected="false">
+                        <i class="mdi mdi-bell-outline"></i>Errors</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="tab-2-4" data-toggle="tab" href="#influencers-2-4" role="tab"
+                        aria-controls="influencers-2-4" aria-selected="false">
+                        <i class="mdi mdi-account-outline"></i>Warnings</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content col-md-10">
+                    <div class="tab-pane fade show active" id="dashboard-2-1" role="tabpanel" aria-labelledby="tab-2-1">
+                      <div class="row project-list-showcase">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 project-grid">
+                          <div class="project-grid-inner" style="">
+                            <div class="d-flex align-items-start">
+                              <div class="wrapper">
+                                <h5 class="project-title">Expected identifier when parsing expression, got malformed
+                                  string</h5>
+                                <p class="project-location text-danger">Error</p>
+                              </div>
+                              <div class="badge badge-inverse-danger ml-auto">Test.lua</div>
+                            </div>
+                            <p class="project-description"><span>Expected identifier when parsing expression, got
+                                malformed string</span></p>
+                            <div class="d-flex justify-content-between">
+                              <p class="mb-2 font-weight-medium">Recent Events</p>
+                              <p class="mb-2 font-weight-medium">50</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="action-tags d-flex flex-row">
+                                <a type="button" class="btn btn-outline-primary" href="https://youtube.com/">Goto Server</a>
+                                &nbsp;
+                                <button type="button" class="btn btn-outline-warning">Ignore</button>
+                              </div>
+
+                            </div>
+                            <hr />
+                            <div class="d-flex justify-content-between align-items-center">
+                              Start Date: 07/07/21&nbsp;&nbsp;&nbsp;&nbsp;Latest: 07/07/21
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                              Hash: <small>8736e82b13b2debcaa64f928edb15d62c2186a7e</small>
+                            </div>
+
+
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 project-grid">
+                          <div class="project-grid-inner" style="">
+                            <div class="d-flex align-items-start">
+                              <div class="wrapper">
+                                <h5 class="project-title">Expected identifier when parsing expression, got malformed
+                                  string</h5>
+                                <p class="project-location text-danger">Error</p>
+                              </div>
+                              <div class="badge badge-inverse-danger ml-auto">Test.lua</div>
+                            </div>
+                            <p class="project-description"><span>Expected identifier when parsing expression, got
+                                malformed string</span></p>
+                            <div class="d-flex justify-content-between">
+                              <p class="mb-2 font-weight-medium">Recent Events</p>
+                              <p class="mb-2 font-weight-medium">50</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="action-tags d-flex flex-row">
+                                <button type="button" class="btn btn-outline-primary">Goto Server</button>
+                                &nbsp;
+                                <button type="button" class="btn btn-outline-warning">Ignore</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 project-grid">
+                          <div class="project-grid-inner" style="">
+                            <div class="d-flex align-items-start">
+                              <div class="wrapper">
+                                <h5 class="project-title">Expected identifier when parsing expression, got malformed
+                                  string</h5>
+                                <p class="project-location text-danger">Error</p>
+                              </div>
+                              <div class="badge badge-inverse-danger ml-auto">Test.lua</div>
+                            </div>
+                            <p class="project-description"><span>Expected identifier when parsing expression, got
+                                malformed string</span></p>
+                            <div class="d-flex justify-content-between">
+                              <p class="mb-2 font-weight-medium">Recent Events</p>
+                              <p class="mb-2 font-weight-medium">50</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="action-tags d-flex flex-row">
+                                <button type="button" class="btn btn-outline-primary">Goto Server</button>
+                                &nbsp;
+                                <button type="button" class="btn btn-outline-warning">Ignore</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 project-grid">
+                          <div class="project-grid-inner" style="">
+                            <div class="d-flex align-items-start">
+                              <div class="wrapper">
+                                <h5 class="project-title">Expected identifier when parsing expression, got malformed
+                                  string</h5>
+                                <p class="project-location text-danger">Error</p>
+                              </div>
+                              <div class="badge badge-inverse-danger ml-auto">Test.lua</div>
+                            </div>
+                            <p class="project-description"><span>Expected identifier when parsing expression, got
+                                malformed string</span></p>
+                            <div class="d-flex justify-content-between">
+                              <p class="mb-2 font-weight-medium">Recent Events</p>
+                              <p class="mb-2 font-weight-medium">50</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="action-tags d-flex flex-row">
+                                <button type="button" class="btn btn-outline-primary">Goto Server</button>
+                                &nbsp;
+                                <button type="button" class="btn btn-outline-warning">Ignore</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 project-grid">
+                          <div class="project-grid-inner" style="">
+                            <div class="d-flex align-items-start">
+                              <div class="wrapper">
+                                <h5 class="project-title">Expected identifier when parsing expression, got malformed
+                                  string</h5>
+                                <p class="project-location text-danger">Error</p>
+                              </div>
+                              <div class="badge badge-inverse-danger ml-auto">Test.lua</div>
+                            </div>
+                            <p class="project-description"><span>Expected identifier when parsing expression, got
+                                malformed string</span></p>
+                            <div class="d-flex justify-content-between">
+                              <p class="mb-2 font-weight-medium">Recent Events</p>
+                              <p class="mb-2 font-weight-medium">50</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="action-tags d-flex flex-row">
+                                <button type="button" class="btn btn-outline-primary">Goto Server</button>
+                                &nbsp;
+                                <button type="button" class="btn btn-outline-warning">Ignore</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 project-grid">
+                          <div class="project-grid-inner" style="">
+                            <div class="d-flex align-items-start">
+                              <div class="wrapper">
+                                <h5 class="project-title">Expected identifier when parsing expression, got malformed
+                                  string</h5>
+                                <p class="project-location text-danger">Error</p>
+                              </div>
+                              <div class="badge badge-inverse-danger ml-auto">Test.lua</div>
+                            </div>
+                            <p class="project-description"><span>Expected identifier when parsing expression, got
+                                malformed string</span></p>
+                            <div class="d-flex justify-content-between">
+                              <p class="mb-2 font-weight-medium">Recent Events</p>
+                              <p class="mb-2 font-weight-medium">50</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="action-tags d-flex flex-row">
+                                <button type="button" class="btn btn-outline-primary">Goto Server</button>
+                                &nbsp;
+                                <button type="button" class="btn btn-outline-warning">Ignore</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 project-grid">
+                          <div class="project-grid-inner" style="">
+                            <div class="d-flex align-items-start">
+                              <div class="wrapper">
+                                <h5 class="project-title">Expected identifier when parsing expression, got malformed
+                                  string</h5>
+                                <p class="project-location text-danger">Error</p>
+                              </div>
+                              <div class="badge badge-inverse-danger ml-auto">Test.lua</div>
+                            </div>
+                            <p class="project-description"><span>Expected identifier when parsing expression, got
+                                malformed string</span></p>
+                            <div class="d-flex justify-content-between">
+                              <p class="mb-2 font-weight-medium">Recent Events</p>
+                              <p class="mb-2 font-weight-medium">50</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="action-tags d-flex flex-row">
+                                <button type="button" class="btn btn-outline-primary">Goto Server</button>
+                                &nbsp;
+                                <button type="button" class="btn btn-outline-warning">Ignore</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="message-2-2" role="tabpanel" aria-labelledby="tab-2-2">
+                      <div class="row">
+
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="campaigns-2-3" role="tabpanel" aria-labelledby="tab-2-3">
+                      <div class="row">
+
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="influencers-2-4" role="tabpanel" aria-labelledby="tab-2-4">
+                      <div class="row">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="container-fluid clearfix">
+            <!-- <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 <a href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i>
+              </span> -->
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../assets/js/shared/off-canvas.js"></script>
+  <script src="../assets/js/shared/hoverable-collapse.js"></script>
+  <script src="../assets/js/shared/misc.js"></script>
+  <script src="../assets/js/shared/settings.js"></script>
+  <script src="../assets/js/shared/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page -->
+  <script src="../assets/js/main/dashboard.js"></script>
+  <!-- End custom js for this page -->
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+<Material name="VIKING_ROOM_MATERIAL">
+    <Shader name="STANDARD_SURFACE">
+        <!-- You would put your shader properties in here... -->
+        <diffuse>
+            <ImportTexture src="viking_room.png" />
+        </diffuse>
+    </Shader>
+</Material>

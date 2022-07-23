@@ -1,0 +1,25 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="40"
+             xmlns:conv="clr-namespace:Novovu.Workshop.Converters"
+             x:Class="Novovu.Workshop.Views.WorkspaceSelectionItem" >
+  <Control.Styles>
+    <Style Selector="StackPanel">
+      <Setter Property="StackPanel.Background" Value="#212337"></Setter>
+    </Style>
+    <Style Selector="StackPanel:pointerover">
+      <Setter Property="StackPanel.Background" Value="#2F3147"></Setter>
+    </Style>
+  </Control.Styles>
+  <UserControl.Resources>
+    <conv:BitmapValueConverter x:Key="bmpconv"></conv:BitmapValueConverter>
+  </UserControl.Resources>
+  <StackPanel Orientation="Horizontal" >
+   
+    <Image Source="{Binding Icon, Converter={StaticResource bmpconv}}" Width="30" Height="30" Margin="20,0,0,0"/>
+    <TextBlock Foreground="White" Margin="20,0,0,0" VerticalAlignment="Center" FontSize="15" FontWeight="SemiBold" Text="{Binding Name}">  </TextBlock>
+  </StackPanel>
+    
+</UserControl>

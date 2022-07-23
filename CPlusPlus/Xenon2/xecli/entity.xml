@@ -1,0 +1,8 @@
+<Entity name="CoolEntity">
+    <Material name="COOL_MATERIAL_NAME" />
+    <Mesh>
+        <ImportMesh type="OBJ" src="mesh.obj"/> 
+    </Mesh>
+    <Children>
+    </Children>
+</Entity>

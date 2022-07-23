@@ -1,0 +1,6 @@
+architecture: replicaset
+auth:
+  enabled: true
+  username: admin
+  password: Nau6lRS41YuTfP5Wsj0OlMKgukgXhJDRKAlYrPsqofwPATXH3J
+  database: admin

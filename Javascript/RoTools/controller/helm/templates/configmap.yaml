@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-config
+data:
+  CONTROLLER_CONNECTION: ws://{{ .Release.Name }}-cfg.{{ .Release.Namespace }}.svc.cluster.local/
+  MONGODB_HOSTNAME: {{ quote .Values.mongo.hostname }}
+  REPLICA_SET: {{ .Values.mongo.replicaSet }}
+  CONNECTION_STRING: "mongodb://{{ .Values.mongo.username }}:{{ .Values.mongo.password }}@{{ .Values.mongo.hostname }}/"
+  IS_DEBUG: "false"

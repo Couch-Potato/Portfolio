@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>RoTools</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css">
+  <link rel="stylesheet" href="../assets/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../assets/vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End Plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../assets/css/shared/style.css">
+  <!-- endinject -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="../assets/css/main/style.css">
+  <!-- End Layout styles -->
+  <link rel="shortcut icon" href="../assets/images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+        <a class="navbar-brand brand-logo" href="index.html">
+          <img src="../assets/images/logo_7.svg" alt="logo" />
+        </a>
+        <a class="navbar-brand brand-logo-mini" href="index.html">
+          <img src="../assets/images/logo-mini_7.svg" alt="logo" />
+        </a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="mdi mdi-menu"></span>
+        </button>
+        <form action="#" class="form form-search ml-auto d-none d-md-flex">
+
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown d-none d-xl-inline-flex">
+            <a class="nav-link dropdown-toggle pl-4 d-flex align-items-center" id="UserDropdown" href="#"
+              data-toggle="dropdown" aria-expanded="false">
+              <div class="count-indicator d-inline-flex mr-3">
+                <img class="img-xs rounded-circle"
+                  src="https://tr.rbxcdn.com/3d035a67f15d1d84ee11507affaac230/150/150/AvatarHeadshot/Png"
+                  alt="Profile image">
+                <span class="count count-sm bg-inverse-primary"></span>
+              </div>
+              <span class="profile-text font-weight-medium">siteowner</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+
+              <a class="dropdown-item mt-2"> Billing </a>
+              <a class="dropdown-item"> Manage Settings </a>
+              <a class="dropdown-item"> Sign Out </a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <!-- partial:partials/_settings-panel.html -->
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas dynamic-active-class-disabled" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="blank_page.html">
+              <i class="menu-icon mdi mdi-cube-outline"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" data-toggle="collapse" href="#mod-dropdown" aria-expanded="false"
+              aria-controls="mod-dropdown">
+              <i class="menu-icon mdi mdi-gavel"></i>
+              <span class="menu-title">Moderation</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="mod-dropdown">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">View Servers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Lookup User</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#log-dropdown" aria-expanded="false"
+              aria-controls="log-dropdown">
+              <i class="menu-icon mdi mdi-code-braces"></i>
+              <span class="menu-title">Logging</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="log-dropdown">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">View Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">View Server Logs</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#data-dropdown" aria-expanded="false"
+              aria-controls="data-dropdown">
+              <i class="menu-icon mdi mdi-database"></i>
+              <span class="menu-title">Data</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="data-dropdown">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">View Datasets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">View User Data</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#settings-dropdown" aria-expanded="false"
+              aria-controls="settings-dropdown">
+              <i class="menu-icon mdi mdi-settings"></i>
+              <span class="menu-title">Settings</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="settings-dropdown">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Game Keys</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">API Keys</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper" style="margin-top: 0;">
+          <div class="content-header d-flex flex-column flex-md-row">
+            <h4 class="mb-0">Server 88fb06e3-74f1-427b-a028-f4e0dea14909</h4>
+          </div>
+          <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">88fb06e3-74f1-427b-a028-f4e0dea14909</h4>
+                <button type="button" class="btn btn-outline-success">
+                  Join Server</button>
+                <button type="button" class="btn btn-outline-danger">
+                  Shutdown</button>
+                <h5 style="margin-top: 10px;">Stats</h5>
+                <div class="col-md-6">
+                  <table class="table grid-margin stretch-card">
+                    <tbody>
+                      <tr>
+                        <td>FPS: <b>56.01</b></td>
+                        <td>Ping: <b>198</b></td>
+                        <td>Clients: <b>12/12</b></td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Players</h4>
+                  <p class="card-description">All players in your game.</p>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Username</th>
+                        <th>UserId</th>
+                        <th>Flags</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>siteowner</td>
+                        <td>123</td>
+                        <td>
+                          <label class="badge badge-danger">Possible Exploiter</label>
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-danger">
+                            Ban</button>
+                          <button type="button" class="btn btn-outline-warning">
+                            Warn</button>
+                          <button type="button" class="btn btn-outline-primary">
+                            Modify</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>siteowner</td>
+                        <td>123</td>
+                        <td>
+                          <label class="badge badge-danger">Possible Exploiter</label>
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-danger">
+                            Ban</button>
+                          <button type="button" class="btn btn-outline-warning">
+                            Warn</button>
+                          <button type="button" class="btn btn-outline-primary">
+                            Modify</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>siteowner</td>
+                        <td>123</td>
+                        <td>
+                          <label class="badge badge-danger">Possible Exploiter</label>
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-outline-danger">
+                            Ban</button>
+                          <button type="button" class="btn btn-outline-warning">
+                            Warn</button>
+                          <button type="button" class="btn btn-outline-primary">
+                            Modify</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Server Terminal</h4>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Events</h4>
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Flags</th>
+                      <th>Type</th>
+                      <th>Time</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  
+                    <tr>
+                      <td>
+                        <label class="badge badge-danger">URGENT</label>
+                      </td>
+                      <td>PLAYER_BUTTON_HIT</td>
+                      <td>July 21 2020 10:20 PM</td>
+                      
+                      <td>
+                        
+                        <button type="button" class="btn btn-outline-primary">
+                          View More</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">FPS</h4>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <h2 class="mb-0 font-weight-medium">51.09</h2>
+                      <p class="mb-5 text-muted">FPS</p>
+                    </div>
+                  </div>
+                  <canvas id="lineChart" style="height:250px"></canvas>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="container-fluid clearfix">
+            <!-- <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 <a href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i>
+              </span> -->
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="../assets/vendors/chart.js/Chart.min.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../assets/js/shared/off-canvas.js"></script>
+  <script src="../assets/js/shared/hoverable-collapse.js"></script>
+  <script src="../assets/js/shared/misc.js"></script>
+  <script src="../assets/js/shared/settings.js"></script>
+  <script src="../assets/js/shared/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page -->
+  <script src="../assets/js/main/dashboard.js"></script>
+  <script>
+    if ($("#lineChart").length) {
+      var lineData = {
+        labels: [10, 20, 30, 40, 50, 60, 70, 80, 90],
+        datasets: [{
+          data: [30, 50, 52, 53, 55, 55, 55, 40, 50],
+          backgroundColor: ChartColor[0],
+          borderColor: ChartColor[0],
+          borderWidth: 3,
+          fill: 'false',
+          label: "FPS"
+        }]
+      };
+      var lineOptions = {
+        responsive: true,
+        maintainAspectRatio: true,
+        plugins: {
+          filler: {
+            propagate: false
+          }
+        },
+        scales: {
+          xAxes: [{
+            display: true,
+            scaleLabel: {
+              display: true,
+              labelString: 'Seconds',
+              fontSize: 12,
+              lineHeight: 2,
+              fontColor: chartFontcolor
+            },
+            ticks: {
+              fontColor: chartFontcolor,
+              stepSize: 50,
+              min: 0,
+              max: 150,
+              autoSkip: true,
+              autoSkipPadding: 15,
+              maxRotation: 0,
+              maxTicksLimit: 10
+            },
+            gridLines: {
+              display: false,
+              drawBorder: false,
+              color: 'transparent',
+              zeroLineColor: '#eeeeee'
+            }
+          }],
+          yAxes: [{
+            display: true,
+            scaleLabel: {
+              display: true,
+              labelString: 'FPS',
+              fontSize: 12,
+              lineHeight: 2,
+              fontColor: chartFontcolor
+            },
+            ticks: {
+              fontColor: chartFontcolor,
+              display: true,
+              autoSkip: false,
+              maxRotation: 0,
+              stepSize: 100,
+              min: 0,
+              max: 60
+            },
+            gridLines: {
+              drawBorder: false,
+              color: chartGridLineColor,
+              zeroLineColor: chartGridLineColor
+            }
+          }]
+        },
+        legend: {
+          display: false
+        },
+        legendCallback: function (chart) {
+          var text = [];
+          text.push('<div class="chartjs-legend"><ul>');
+          for (var i = 0; i < chart.data.datasets.length; i++) {
+            console.log(chart.data.datasets[i]); // see what's inside the obj.
+            text.push('<li>');
+            text.push('<span style="background-color:' + chart.data.datasets[i].borderColor + '">' + '</span>');
+            text.push(chart.data.datasets[i].label);
+            text.push('</li>');
+          }
+          text.push('</ul></div>');
+          return text.join("");
+        },
+        elements: {
+          line: {
+            tension: .3
+          },
+          point: {
+            radius: 0
+          }
+        }
+      }
+      var lineChartCanvas = $("#lineChart").get(0).getContext("2d");
+      var lineChart = new Chart(lineChartCanvas, {
+        type: 'line',
+        data: lineData,
+        options: lineOptions
+      });
+      document.getElementById('line-traffic-legend').innerHTML = lineChart.generateLegend();
+    }
+  </script>
+  <!-- End custom js for this page -->
+</body>
+
+</html>

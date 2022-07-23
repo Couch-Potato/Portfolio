@@ -1,0 +1,69 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="30"
+             x:Class="Novovu.Workshop.Views.MenuBar" Background="#161724">
+  <DockPanel LastChildFill="True">
+    <StackPanel Orientation="Horizontal" DockPanel.Dock="Left">
+      <TextBlock Foreground="#EFEFEF" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="13" FontWeight="SemiBold">Novovu Workshop</TextBlock>
+      <TextBlock Foreground="#8D8EA1" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="13" FontWeight="SemiBold">Example Project</TextBlock>
+      <Menu Foreground="#BCBDCE" VerticalAlignment="Center" Margin="50,0,0,0">
+        <MenuItem Header="File" FontSize="13" FontWeight="SemiBold">
+          <MenuItem Header="_Import Level" Foreground="#8D8EA1"></MenuItem>
+          <MenuItem Header="_Export Level" Foreground="#8D8EA1"></MenuItem>
+          <Separator/>
+          <MenuItem Header="_Export Selected"></MenuItem>
+          <MenuItem Header="_Import"></MenuItem>
+        </MenuItem>
+        <MenuItem Header="Edit" FontSize="13" FontWeight="SemiBold">
+          <MenuItem Header="_Insert">
+            <MenuItem Header="__Light"></MenuItem>
+          </MenuItem>
+          <Separator/>
+          <MenuItem Header="_Undo" Foreground="#8D8EA1"></MenuItem>
+          <MenuItem Header="_Redo" Foreground="#8D8EA1"></MenuItem>
+          <Separator/>
+          <MenuItem Header="_Run Level">
+            <MenuItem.Icon>
+              <Image Source="avares://Novovu.Workshop/Assets/play-symbol.png"></Image>
+            </MenuItem.Icon>
+          </MenuItem>
+          <MenuItem Header="_Render Selected"></MenuItem>
+          <MenuItem Header="_Render Level"></MenuItem>
+          <MenuItem Header="_Wireframe Mode">
+            <MenuItem.Icon>
+               <CheckBox BorderThickness="0"
+                      IsHitTestVisible="False"
+                      Command="{Binding ToggleWireframe}">
+                Toggle _Wireframe
+            </CheckBox>
+            </MenuItem.Icon>
+          </MenuItem>
+        </MenuItem>
+        <MenuItem Header="View" FontSize="13" FontWeight="SemiBold">
+          <MenuItem Header="_Object Designer"></MenuItem>
+          <MenuItem Header="_Level Editor"></MenuItem>
+          <MenuItem Header="_Script Editor"></MenuItem>
+          <MenuItem Header="_Script Output" Foreground="#8D8EA1"></MenuItem>
+        </MenuItem>
+        <MenuItem Header="Extensions" FontSize="13" FontWeight="SemiBold">
+          <MenuItem Header="_View Installed" Foreground="#8D8EA1"></MenuItem>
+          <MenuItem Header="_Install Extension" Foreground="#8D8EA1"></MenuItem>
+          <MenuItem Header="_View Extension Console" Foreground="#8D8EA1"></MenuItem>
+        </MenuItem>
+        <Button Width="60" Margin="0,0,0,0" Height="20" Command="{Binding RunLevel}" Background="Transparent" BorderThickness="0">
+          <StackPanel Orientation="Horizontal">
+            <Image Width="30" Source="avares://Novovu.Workshop/Assets/play-symbol.png" Height="15"></Image>
+            <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" FontSize="13" FontWeight="SemiBold" Foreground="#BCBDCE" Width="30" Height="20">Play</TextBlock>
+          </StackPanel>
+
+        </Button>
+      </Menu>
+    </StackPanel>
+  </DockPanel>
+
+
+     
+  
+</UserControl>

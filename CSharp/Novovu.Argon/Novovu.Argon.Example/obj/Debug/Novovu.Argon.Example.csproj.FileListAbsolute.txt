@@ -1,0 +1,11 @@
+C:\Users\Jeremy\source\repos\Novovu.Argon\Novovu.Argon.Example\bin\Debug\Novovu.Argon.Example.dll
+C:\Users\Jeremy\source\repos\Novovu.Argon\Novovu.Argon.Example\bin\Debug\Novovu.Argon.Example.pdb
+C:\Users\Jeremy\source\repos\Novovu.Argon\Novovu.Argon.Example\obj\Debug\Novovu.Argon.Example.csprojAssemblyReference.cache
+C:\Users\Jeremy\source\repos\Novovu.Argon\Novovu.Argon.Example\obj\Debug\Novovu.Argon.Example.csproj.CoreCompileInputs.cache
+C:\Users\Jeremy\source\repos\Novovu.Argon\Novovu.Argon.Example\obj\Debug\Novovu.Argon.Example.dll
+C:\Users\Jeremy\source\repos\Novovu.Argon\Novovu.Argon.Example\obj\Debug\Novovu.Argon.Example.pdb
+C:\Users\JeremyX\Source\Repos\Novovu-Argon\Novovu.Argon.Example\bin\Debug\Novovu.Argon.Example.dll
+C:\Users\JeremyX\Source\Repos\Novovu-Argon\Novovu.Argon.Example\bin\Debug\Novovu.Argon.Example.pdb
+C:\Users\JeremyX\Source\Repos\Novovu-Argon\Novovu.Argon.Example\obj\Debug\Novovu.Argon.Example.csprojAssemblyReference.cache
+C:\Users\JeremyX\Source\Repos\Novovu-Argon\Novovu.Argon.Example\obj\Debug\Novovu.Argon.Example.dll
+C:\Users\JeremyX\Source\Repos\Novovu-Argon\Novovu.Argon.Example\obj\Debug\Novovu.Argon.Example.pdb

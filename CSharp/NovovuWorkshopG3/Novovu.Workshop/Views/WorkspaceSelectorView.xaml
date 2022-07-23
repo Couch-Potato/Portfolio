@@ -1,0 +1,42 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="40"
+             xmlns:views="clr-namespace:Novovu.Workshop.Views"
+             x:Class="Novovu.Workshop.Views.WorkspaceSelectorView" Background="#212337">
+  <DockPanel>
+    <DockPanel  Width="200" DockPanel.Dock="Right">
+      <StackPanel Width="30" Margin="5,5,5,5"  DockPanel.Dock="Right" HorizontalAlignment="Right">
+        <Border Background="Transparent" CornerRadius="15" Width="30" Height="30">
+          <Image Source="{Binding Avatar}"></Image>
+        </Border>
+      </StackPanel>
+      <StackPanel  Margin="5,2,5,3" DockPanel.Dock="Right" HorizontalAlignment="Right">
+        <TextBlock Foreground="White" Margin="20,0,0,0" VerticalAlignment="Center" FontSize="15" FontWeight="SemiBold" Text="{Binding Username}">  </TextBlock>
+        <TextBlock Foreground="Gray" Margin="20,-3,0,0" VerticalAlignment="Center" FontSize="12" FontWeight="Black" Text="{Binding UserDesc}">  </TextBlock>
+      </StackPanel>
+
+    </DockPanel>
+    <StackPanel Orientation="Horizontal">
+      <Button Background="Transparent" BorderThickness="0" Padding="0" Command="{Binding MenuHandle}">
+        <views:WorkspaceSelectionItem Height="400" Width="300" DataContext="{Binding Selected}"></views:WorkspaceSelectionItem>
+      </Button>
+      <ItemsControl Items="{Binding Workspaces}" Width="{Binding CollapseWidth}">
+        <ItemsControl.ItemsPanel>
+          <ItemsPanelTemplate>
+            <StackPanel Orientation="Horizontal" />
+          </ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
+        <ItemsControl.DataTemplates>
+          <DataTemplate>
+            <Button Background="Transparent" BorderThickness="0" Padding="0" Command="{Binding Activate}">
+              <views:WorkspaceSelectionItem Height="400" Width="225"></views:WorkspaceSelectionItem>
+            </Button>
+          </DataTemplate>
+        </ItemsControl.DataTemplates>
+      </ItemsControl>
+
+    </StackPanel>
+  </DockPanel>
+</UserControl>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ZenProjectList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ZenProjects>
+    <ZenProject Source="Novovu.Workshop/Novovu.Workshop.csproj" Windows="net472" Mac="net472" Linux="net472">
+    <Name>Workshop</Name>
+      <VersionFile>version.txt</VersionFile>
+      <ChangeLog>changelog.txt</ChangeLog>
+      <NugetRepos>
+        <ZenNugetRepo>
+          <Name>Avalonia</Name>
+          <Source>https://nuget.avaloniaui.net/repository/avalonia-all/</Source>
+        </ZenNugetRepo>
+      </NugetRepos>
+      <References>
+        <ZenProjectReference PullType="web">
+          <Name>MonoGame.Framework</Name>
+          <Source>https://artifacts.novovu.com/Artifacts/BleedingEdgeCurrent/Avalonia/net472/MonoGame.Framework.dll</Source>
+        </ZenProjectReference>
+        <ZenProjectReference PullType="web">
+          <Name>Novovu.Xenon</Name>
+          <Source>https://artifacts.novovu.com/Artifacts/BleedingEdgeCurrent/XenonEngine/Novovu.Xenon.dll</Source>
+        </ZenProjectReference>
+		<ZenProjectReference PullType="web">
+          <Name>Novovu.Xenon.XEF</Name>
+          <Source>https://artifacts.novovu.com/Artifacts/BleedingEdgeCurrent/XenonEngine/Novovu.Xenon.XEF.dll</Source>
+        </ZenProjectReference>
+        <ZenProjectReference PullType="web">
+          <Name>Novovu.Xenon.AvaloniaControl</Name>
+          <Source>https://artifacts.novovu.com/Artifacts/BleedingEdgeCurrent/Avalonia/net472/Novovu.Xenon.AvaloniaControl.dll</Source>
+        </ZenProjectReference>
+      </References>
+      <OutputFolders>
+        <ZenOutputFolder Folder="x64\libopenal.so.1" />
+        <ZenOutputFolder Folder="x64\libSDL2-2.0.so.0" />
+        <ZenOutputFolder Folder="x64\SDL2.dll" />
+        <ZenOutputFolder Folder="x64\soft_oal.dll" />
+        <ZenOutputFolder Folder="x86\libopenal.so.1" />
+        <ZenOutputFolder Folder="x86\libSDL2-2.0.so.0" />
+        <ZenOutputFolder Folder="x86\SDL2.dll" />
+        <ZenOutputFolder Folder="x86\soft_oal.dll" />
+      </OutputFolders>
+      <DependentFiles>
+        
+      </DependentFiles>
+      <PostInstallActions>
+        
+      </PostInstallActions>
+    </ZenProject>
+
+   
+    
+  </ZenProjects>
+</ZenProjectList>

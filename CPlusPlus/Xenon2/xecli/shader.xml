@@ -1,0 +1,15 @@
+<Shader name="COOL_SHADER">
+    <VertexShader src="vert.spv"/>
+    <FragmentShader src="frag.spv" />
+    <Buffers>
+        <UniformBuffer name="shininess" >
+            <ImportProperty src="SHININESS"/>
+        </UniformBuffer>
+        <TextureSampler name="diffuse">
+            <ImportTexture src="texture.png"/>
+        </TextureSampler>
+        <TextureSampler name="depth">
+            <BaseTexture src="SCENE_DEPTH_MAP"/>
+        </TextureSampler>
+    </Buffers>
+</Shader>

@@ -1,0 +1,131 @@
+.v_c {
+    /* position: absolute; */
+width: 400px;
+height: 225px;
+/* left: 697px; */
+/* top: 554px; */
+
+margin: 0 auto;
+/* margin-right:  70px; */
+/* margin-right:  70px; */
+
+margin: 20px;
+
+display: inline-block;
+
+/* background-color: rebeccapurple; */
+/* background: url(unnamed.jpg); */
+border-radius: 6px;
+}
+.cont {
+    text-align: center;
+    align-items: center;
+}
+.selected_c {
+    /* position: absolute; */
+width: 400px;
+height: 225px;
+
+/* position: relative; */
+align-items: center;
+text-align: center;
+
+
+background: rgba(255, 255, 255, 0.02);
+border: 7px solid rgba(78, 171, 239, 0.64);
+box-sizing: border-box;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 6px;
+}
+.v_t {
+    position: absolute;
+width: 386px;
+height: 220px;
+left: 0px;
+top: 0px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 38px;
+line-height: 56px;
+display: flex;
+align-items: center;
+text-align: center;
+/* margin: 0; */
+/* padding: 0; */
+color: #FFFFFF;
+text-transform: uppercase;
+/* display: inline; */
+}
+.selected_w {
+    /* position: absolute; */
+width: 400px;
+height: 225px;
+
+/* position: relative; */
+align-items: center;
+text-align: center;
+
+
+/* background: rgba(255, 255, 255, 0.02); */
+/* border: 7px solid rgba(78, 171, 239, 0.64); */
+box-sizing: border-box;
+/* backdrop-filter: blur(7px); */
+/* Note: backdrop-filter has minimal browser support */
+
+background: rgba(56, 172, 255, 0.349);
+backdrop-filter: blur(19px);
+
+border-radius: 6px;
+}
+.pb {
+    position: absolute;
+width: 100px;
+background-size: 100px 125px;
+height: 125px;
+/* left: 298px; */
+/* top: 253px; */
+
+left: 160px;
+top: 50px;
+
+background-image: url('/pb.svg');
+background-repeat: no-repeat;
+/* background-clip: border-box; */
+
+/* background: #FFFFFF; */
+border-radius: 6px;
+}
+.np {
+    /* position: absolute;
+width: 386px;
+height: 220px;
+left: 0px;
+top: 0px; */
+
+width: 100%;
+height: 80px;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 38px;
+line-height: 56px;
+/* display: flex; */
+align-items: center;
+text-align: center;
+margin: 0 auto;
+margin-top: 40px;
+/* margin: 0; */
+/* padding: 0; */
+color: #FFFFFF;
+text-transform: uppercase;
+/* display: inline; */
+}
+.KILLME {
+    color: #00BCDE
+}

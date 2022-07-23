@@ -1,0 +1,10 @@
+c:\Users\Jeremy\source\repos\Peridot\PeridotServer\bin\Debug\PeridotServer.exe.config
+c:\Users\Jeremy\source\repos\Peridot\PeridotServer\bin\Debug\PeridotServer.exe
+c:\Users\Jeremy\source\repos\Peridot\PeridotServer\bin\Debug\PeridotServer.pdb
+c:\Users\Jeremy\source\repos\Peridot\PeridotServer\obj\Debug\PeridotServer.csprojAssemblyReference.cache
+c:\Users\Jeremy\source\repos\Peridot\PeridotServer\obj\Debug\PeridotServer.csproj.CoreCompileInputs.cache
+c:\Users\Jeremy\source\repos\Peridot\PeridotServer\obj\Debug\PeridotServer.exe
+c:\Users\Jeremy\source\repos\Peridot\PeridotServer\obj\Debug\PeridotServer.pdb
+c:\Users\Jeremy\source\repos\Peridot\PeridotServer\bin\Debug\Peridot.dll
+c:\Users\Jeremy\source\repos\Peridot\PeridotServer\bin\Debug\Peridot.pdb
+c:\Users\Jeremy\source\repos\Peridot\PeridotServer\obj\Debug\PeridotServer.csproj.CopyComplete

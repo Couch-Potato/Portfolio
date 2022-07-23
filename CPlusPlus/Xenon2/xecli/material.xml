@@ -1,0 +1,7 @@
+<Material name="COOL_MATERIAL_NAME">
+    <Shader name="COOL_SHADER">
+        <SHININESS>
+            32
+        </SHININESS>
+    </Shader>
+</Material>

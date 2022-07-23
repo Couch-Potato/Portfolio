@@ -1,0 +1,65 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="80"  Background="#212337"
+             
+             x:Class="Novovu.Workshop.Views.Properties.Vector3" >
+
+  <Grid Background="#212337" Margin="0,5,0,0">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="90"></ColumnDefinition>
+      <ColumnDefinition Width="90"></ColumnDefinition>
+      <ColumnDefinition Width="90"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="30"></RowDefinition>
+      <RowDefinition Height="30"></RowDefinition>
+    </Grid.RowDefinitions>
+    <Panel Grid.Column="0" Grid.Row="0" >
+      <TextBlock Foreground="White" FontSize="13" FontWeight="SemiBold" TextAlignment="Center" VerticalAlignment="Center" Text="{Binding PropertyName}">  </TextBlock>
+    </Panel>
+    <Grid Grid.Column="0" Grid.Row="1">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="30"></ColumnDefinition>
+        <ColumnDefinition Width="60"></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      <Panel  Grid.Row="0" Grid.Column="0">
+        <TextBlock Foreground="#8D8EA1" FontSize="13" FontWeight="SemiBold" TextAlignment="Center" VerticalAlignment="Center"> X </TextBlock>
+      </Panel>
+      <Panel  Grid.Row="0" Grid.Column="1">
+        <Border CornerRadius="2" BorderThickness="2" BorderBrush="#33354A" Background="#212337">
+          <TextBox BorderThickness="0" Background="Transparent" Foreground="White" FontSize="13" FontWeight="SemiBold" TextAlignment="Center" VerticalAlignment="Center" Text="{Binding Vector.X}">  </TextBox>
+        </Border>
+      </Panel>
+    </Grid>
+    <Grid Grid.Column="1" Grid.Row="1">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="30"></ColumnDefinition>
+        <ColumnDefinition Width="60"></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      <Panel  Grid.Row="0" Grid.Column="0">
+        <TextBlock Foreground="#8D8EA1" FontSize="13" FontWeight="SemiBold" TextAlignment="Center" VerticalAlignment="Center"> Y </TextBlock>
+      </Panel>
+      <Panel  Grid.Row="0" Grid.Column="1">
+        <Border CornerRadius="2" BorderThickness="2" BorderBrush="#33354A" Background="#212337">
+          <TextBox BorderThickness="0" Background="Transparent" Foreground="White" FontSize="13" FontWeight="SemiBold" TextAlignment="Center" VerticalAlignment="Center" Text="{Binding Vector.Y}">  </TextBox>
+        </Border>
+      </Panel>
+    </Grid>
+    <Grid Grid.Column="2" Grid.Row="1">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="30"></ColumnDefinition>
+        <ColumnDefinition Width="60"></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      <Panel  Grid.Row="0" Grid.Column="0">
+        <TextBlock Foreground="#8D8EA1" FontSize="13" FontWeight="SemiBold" TextAlignment="Center" VerticalAlignment="Center"> Z </TextBlock>
+      </Panel>
+      <Panel  Grid.Row="0" Grid.Column="1">
+        <Border CornerRadius="2" BorderThickness="2" BorderBrush="#33354A" Background="#212337">
+          <TextBox BorderThickness="0" Background="Transparent" Foreground="White" FontSize="13" FontWeight="SemiBold" TextAlignment="Center" VerticalAlignment="Center" Text="{Binding Vector.Z}"> </TextBox>
+        </Border>
+      </Panel>
+    </Grid>
+  </Grid>
+</UserControl>

@@ -1,0 +1,9 @@
+<Shader name="STANDARD_SURFACE">
+    <VertexShader src="vert_test.glsl" />
+    <FragmentShader src="frag_test.glsl" />
+    <Buffers>
+        <TextureSampler name="diffuse">
+            <ImportProperty src="diffuse" />
+        </TextureSampler>
+    </Buffers>
+</Shader>

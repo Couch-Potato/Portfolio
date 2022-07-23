@@ -1,0 +1,104 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:models="clr-namespace:Novovu.Workshop.Models"
+             xmlns:shared="clr-namespace:Novovu.Workshop.Shared"
+             mc:Ignorable="d" d:DesignWidth="240" d:DesignHeight="600"
+             xmlns:conv="clr-namespace:Novovu.Workshop.Converters"
+             x:Class="Novovu.Workshop.Views.HierarchyView" Background="#212337">
+  <UserControl.Resources>
+    <conv:BitmapValueConverter x:Key="bmpconv"></conv:BitmapValueConverter>
+  </UserControl.Resources>
+
+  <UserControl.Styles>
+    <Style Selector="TextBlock.TreeItem">
+      <Setter Property="FontWeight" Value="SemiBold"></Setter>
+      <Setter Property="FontSize" Value="13"></Setter>
+    </Style>
+    
+
+  </UserControl.Styles>
+  <Grid >
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="240*"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="28"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+    </Grid.RowDefinitions>
+    <Panel Grid.Row="0" Grid.Column="0" Background="#2F3147">
+      <!--Put the code for the top here-->
+      <TextBlock Margin="30,0,0,0" VerticalAlignment="Center" Foreground="#FFFFFF" FontWeight="SemiBold" FontFamily="Roboto" FontSize="13" Text="{Binding HierarchyTitle}"></TextBlock>
+    </Panel>
+    <Panel Grid.Row="1" DockPanel.Dock="Bottom" Grid.Column="0" >
+      <!--Put the code for the hierarchy here-->
+      <TreeView Items="{Binding GameObjects}" BorderThickness="0" AutoScrollToSelectedItem="true" Name="tree"> 
+        <TreeView.Resources>
+          <SolidColorBrush x:Key="ThemeForegroundBrush" Color="#FFFFFF"></SolidColorBrush>
+          <SolidColorBrush x:Key="ThemeControlHighlightMidBrush" Color="#515367"></SolidColorBrush>
+        </TreeView.Resources>
+        <TreeView.DataTemplates >
+          <TreeDataTemplate ItemsSource="{Binding Children}" >
+         
+            <StackPanel  Width="240" Orientation="Horizontal">
+             
+              <Image Width="15" Height="15" Source="{Binding IconSource, Converter={StaticResource bmpconv}}">
+
+              </Image>
+              <TextBlock Foreground="#FFFFFF" Margin="10,0,0,0" Text="{Binding TreeItemName}" Classes="TreeItem">
+               
+              </TextBlock>
+              <StackPanel.ContextMenu>
+                <ContextMenu Background="#515367" Foreground="#FFFFFF" BorderThickness="0" Items="{Binding ContextOptions}">
+                  <ContextMenu.Styles>
+                    <Style Selector="MenuItem">
+                      <Setter Property="Command" Value="{Binding Select}" />
+                      <Setter Property="Header" Value="{Binding Name}"></Setter>
+                    </Style>
+                  </ContextMenu.Styles>
+                  <ContextMenu.DataTemplates>
+                    <DataTemplate>
+                      <TextBlock Text="{Binding Name}" Foreground="#FFFFFF" />
+                    </DataTemplate>
+                  </ContextMenu.DataTemplates>
+                </ContextMenu>
+              </StackPanel.ContextMenu>
+            </StackPanel>
+            
+          </TreeDataTemplate>
+          <TreeDataTemplate ItemsSource="{Binding Children}" >
+
+            <StackPanel  Width="240" Orientation="Horizontal">
+
+              <Image Width="15" Height="15" Source="{Binding IconSource, Converter={StaticResource bmpconv}}">
+
+              </Image>
+              <TextBlock Foreground="#FFFFFF" Margin="10,0,0,0" Text="{Binding TreeItemName}" Classes="TreeItem">
+
+              </TextBlock>
+              <StackPanel.ContextMenu>
+                <ContextMenu Background="#515367" Foreground="#FFFFFF" BorderThickness="0" Items="{Binding ContextOptions}">
+                  <ContextMenu.Styles>
+                    <Style Selector="MenuItem">
+                      <Setter Property="Command" Value="{Binding Select}" />
+                      <Setter Property="Header" Value="{Binding Name}"></Setter>
+                    </Style>
+                  </ContextMenu.Styles>
+                  <ContextMenu.DataTemplates>
+                    <DataTemplate>
+                      <TextBlock Text="{Binding Name}" Foreground="#FFFFFF" />
+                    </DataTemplate>
+                  </ContextMenu.DataTemplates>
+                </ContextMenu>
+              </StackPanel.ContextMenu>
+            </StackPanel>
+
+          </TreeDataTemplate>
+        </TreeView.DataTemplates>
+      </TreeView>
+
+    </Panel>
+
+  </Grid>
+</UserControl>

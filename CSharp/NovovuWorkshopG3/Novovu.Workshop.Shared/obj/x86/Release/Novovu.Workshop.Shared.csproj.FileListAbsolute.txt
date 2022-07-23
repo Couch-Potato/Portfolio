@@ -1,0 +1,6 @@
+C:\Users\Jeremy\source\repos\NovovuWorkshopG3\Novovu.Workshop.Shared\bin\x86\Release\Novovu.Workshop.Shared.dll
+C:\Users\Jeremy\source\repos\NovovuWorkshopG3\Novovu.Workshop.Shared\bin\x86\Release\Novovu.Workshop.Shared.pdb
+C:\Users\Jeremy\source\repos\NovovuWorkshopG3\Novovu.Workshop.Shared\obj\x86\Release\Novovu.Workshop.Shared.csprojAssemblyReference.cache
+C:\Users\Jeremy\source\repos\NovovuWorkshopG3\Novovu.Workshop.Shared\obj\x86\Release\Novovu.Workshop.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Jeremy\source\repos\NovovuWorkshopG3\Novovu.Workshop.Shared\obj\x86\Release\Novovu.Workshop.Shared.dll
+C:\Users\Jeremy\source\repos\NovovuWorkshopG3\Novovu.Workshop.Shared\obj\x86\Release\Novovu.Workshop.Shared.pdb

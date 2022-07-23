@@ -1,0 +1,40 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="40"  Background="#212337"
+             x:Class="Novovu.Workshop.Views.Properties.EnumView">
+  <Grid Background="#212337" Margin="0,5,0,0">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="300"></ColumnDefinition>
+
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="30"></RowDefinition>
+    </Grid.RowDefinitions>
+
+    <Grid Grid.Column="0" Grid.Row="1">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="100"></ColumnDefinition>
+        <ColumnDefinition Width="150"></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      <Panel  Grid.Row="0" Grid.Column="0">
+        <TextBlock Foreground="#8D8EA1" FontSize="13" FontWeight="SemiBold" TextAlignment="Center" VerticalAlignment="Center" Text="{Binding PropertyName}">  </TextBlock>
+      </Panel>
+      <Panel  Grid.Row="0" Grid.Column="1">
+        <Border CornerRadius="2" BorderThickness="2" BorderBrush="#33354A" Background="#212337">
+          <ComboBox SelectedIndex="0" BorderThickness="0" Background="#212337" Foreground="White" FontSize="13" FontWeight="SemiBold"  VerticalAlignment="Center" Items="{Binding EnumItems}">
+            <!--Set the combobox items according to how it appears :)-->
+            <ComboBox.Resources>
+                <SolidColorBrush x:Key="ThemeForegroundBrush" Color="#FFFFFF"></SolidColorBrush>
+                <SolidColorBrush x:Key="ThemeControlHighlightMidBrush" Color="#515367"></SolidColorBrush>
+            </ComboBox.Resources>
+           
+          </ComboBox>
+         
+        </Border>
+      </Panel>
+    </Grid>
+
+  </Grid>
+</UserControl>

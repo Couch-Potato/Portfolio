@@ -1,0 +1,88 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="300"
+             xmlns:views ="clr-namespace:Novovu.Workshop.Views"
+             xmlns:vm="clr-namespace:Novovu.Workshop.ViewModels"
+             x:Class="Novovu.Workshop.Views.AssetViewerView" Background="#212337">
+  <UserControl.Styles>
+
+    <Style Selector="TabControl">
+      <Setter Property="Background" Value="#2F3147"/>
+
+    </Style>
+    <Style Selector="TabControl WrapPanel">
+      <Setter Property="Background" Value="#212337"/>
+    </Style>
+
+    <Style Selector="TabItem">
+      <Setter Property="FontSize" Value="13"/>
+      <Setter Property="Height" Value="34"/>
+      <Setter Property="VerticalAlignment" Value="Center"/>
+      <Setter Property="Foreground" Value="White"></Setter>
+      <Setter Property="Background" Value="Transparent"/>
+      <Setter Property="Margin" Value="0 0 0 0"/>
+      <Setter Property="Padding" Value="10 0"/>
+      <Setter Property="FontWeight" Value="SemiBold"></Setter>
+    </Style>
+    <Style Selector="TabItem:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+       <Setter Property="Padding" Value="10 0"/>
+      <Setter Property="Background" Value="#515367"/>
+    </Style>
+
+
+    <Style Selector="TabItem:selected">
+      <Setter Property="Foreground" Value="White"/>
+      <Setter Property="Margin" Value="0 0 0 0"/>
+      <Setter Property="Padding" Value="10 0"/>
+      <Setter Property="Background" Value="#2F3147"/>
+    </Style>
+    <Style Selector="TabItem:selected /template/ ContentPresenter#PART_ContentPresenter">
+      <Setter Property="Margin" Value="0 0 0 0"/>
+      <Setter Property="Padding" Value="10 0"/>
+      <Setter Property="Background" Value="#2F3147"/>
+    </Style>
+
+    
+  </UserControl.Styles>
+  <TabControl Items="{Binding Assets}">
+    <TabControl.ItemTemplate>
+      <DataTemplate>
+        <TabItem>
+          <TabItem.Header>
+            <TextBlock VerticalAlignment="Center" Text="{Binding CategoryName}"></TextBlock>
+          </TabItem.Header>
+        </TabItem>
+      </DataTemplate>
+    </TabControl.ItemTemplate>
+    <TabControl.ContentTemplate>
+      <DataTemplate>
+        <ItemsControl Items="{Binding Items}" DockPanel.Dock="Left" HorizontalAlignment="Left">
+          <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+              <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="54" />
+            </ItemsPanelTemplate>
+          </ItemsControl.ItemsPanel>
+          <ItemsControl.ItemTemplate>
+            <DataTemplate>
+              
+              <Border CornerRadius="6" Background="#2F3147" Padding="3" Margin="10,10,0,0"  Width="100" Height="90">
+
+                <Button Command="{Binding SelectItem}"  Background="Transparent" Opacity="1"  BorderThickness="0" >
+                  <views:AssetItem></views:AssetItem>
+                </Button>
+
+              </Border>
+          
+
+
+            </DataTemplate>
+
+          </ItemsControl.ItemTemplate>
+        </ItemsControl>
+      </DataTemplate>
+    </TabControl.ContentTemplate>
+    
+  </TabControl>
+</UserControl>

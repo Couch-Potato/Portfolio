@@ -1,0 +1,7 @@
+<Scene name="SCENE_DEFAULT">
+    <VK_ROOM>
+        <Position x="0" y="0" z="0" />
+        <Scale x="1" y="1" z="1" />
+        <Rotation x="180" y="0" z="0" />
+    </VK_ROOM>
+</Scene>

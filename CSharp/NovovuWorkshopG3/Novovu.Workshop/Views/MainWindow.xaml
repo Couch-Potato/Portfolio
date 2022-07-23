@@ -1,0 +1,48 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:Novovu.Workshop.ViewModels;assembly=Novovu.Workshop"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:props="clr-namespace:Novovu.Workshop.Views.Properties"
+        xmlns:id="clr-namespace:Dock.Avalonia;assembly=Dock.Avalonia"
+        xmlns:views="clr-namespace:Novovu.Workshop.Views"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Novovu.Workshop.Views.MainWindow"
+        Icon="/Assets/novovuws.ico"
+        UseLayoutRounding="True" RenderOptions.BitmapInterpolationMode="HighQuality"
+        WindowState="Normal" WindowStartupLocation="CenterScreen"
+        Foreground="{DynamicResource ThemeForegroundBrush}"
+        BorderThickness="1" BorderBrush="{DynamicResource ThemeBorderLowBrush}"
+        xmlns:idc="clr-namespace:Dock.Avalonia.Controls;assembly=Dock.Avalonia"
+        id:DockProperties.IsDragEnabled="True" id:DockProperties.IsDropEnabled="True"
+        Background="#212337"
+        Title="Novovu Workshop: Untitled"
+        >
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="30"></RowDefinition>
+      <RowDefinition Height="40"></RowDefinition>
+      <RowDefinition Height="380*"></RowDefinition>
+    </Grid.RowDefinitions>
+    <Panel Grid.Row="0" Background="BlanchedAlmond">
+      <views:MenuBar></views:MenuBar>
+    </Panel>
+    <Panel Grid.Row="1" Background="Green">
+      <ContentControl  Content="{Binding WorkspaceSelectorViewModel}">
+
+      </ContentControl>
+    </Panel>
+    <Panel Grid.Row="2">
+      <idc:DockControl Layout="{Binding Layout}" Grid.Row="1" />
+    </Panel>
+  </Grid>
+        
+
+
+  
+
+</Window>

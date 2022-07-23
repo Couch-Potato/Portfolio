@@ -1,0 +1,3 @@
+<ShaderLib name="DystroLib">
+    <Include name="Frag" src="lib_default.glsl"/>
+</ShaderLib>

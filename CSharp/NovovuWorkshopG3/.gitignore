@@ -1,0 +1,21 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/NovovuWorkshopG3
+/Novovu.Workshop.Testbench
+/NovovuWorkshopG3/.vs/NovovuWorkshopG3/DesignTimeBuild
+/NovovuWorkshopG3/obj
+/NovovuWorkshopG3
+/RenderFrameTest/bin/Debug/netcoreapp3.0
+/RenderFrameTest/obj
+/Testapp2/bin/Debug
+/Testapp2/obj
+/Novovu.Workshop.Shared/obj/Debug
+/Novovu.Workshop/bin/Debug
+/Novovu.Workshop/obj
+/UIDesign
+/Novovu.Workshop/bin/x86/Release/net472
+/Novovu.Controls/bin/Debug
+/Novovu.Controls/obj/Debug
+/packages

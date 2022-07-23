@@ -1,0 +1,8 @@
+<Entity name="VK_ROOM">
+    <Material name="VIKING_ROOM_MATERIAL" />
+    <Mesh>
+        <ImportMesh type="OBJ" src="mesh.obj" />
+    </Mesh>
+    <Children></Children>
+    <Components></Components>
+</Entity>
