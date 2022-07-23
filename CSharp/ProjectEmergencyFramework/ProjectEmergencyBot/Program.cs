@@ -78,7 +78,7 @@ namespace ProjectEmergencyBot
             await _interactionService.AddModulesAsync(Assembly.GetEntryAssembly(), _services);
 			//  You can assign your bot token to a string, and pass that in to connect.
 			//  This is, however, insecure, particularly if you plan to have your code hosted in a public repository.
-			var token = "OTg2MDMxNTE5NDg1MjY4MDc4.GPePXD.Xzk_3cNiVf12VDow-U8HOAYw4gUdh2F2_8Q5Ms";
+			var token = "";
 
 			// Some alternative options would be to keep your token in an Environment Variable or a standalone file.
 			// var token = Environment.GetEnvironmentVariable("NameOfYourEnvironmentVariable");
