@@ -1,6 +1,5 @@
 # Portfolio
 All files in this portfolio are originally programmed by me. They may contain some tutorial boilerplate that I was working off. In those cases, I will specify what is boilerplate and what is original work.
-Some of my work may contain profanity because I decided to create some methods and variables during times when I was extremely frusterated and I did not have a ducky to talk with. 
 
 ## Arduino
 While I have done many projects in arduino, few of them I would say are even remotely neat enough to actually be considered. 
